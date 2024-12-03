@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add addEventListener</title>
+</head>
+<style>
+    body{
+        display: flex;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+    .btn{
+        background-color: blue;
+        padding: 10px 20px ;
+        color: white;
+        border: none;
+        margin-top: 300px;
+        cursor: pointer;
+        font-size: 30px;
+        
+    }
+</style>
+<body>
+    <button class="btn">click Me </button>
+</body>
+<script>
+    const button = document.querySelector('.btn');
+    button.addEventListener('click', () => {
+        alert("Clicked Button ! ")
+    })
+</script>
+</html>
