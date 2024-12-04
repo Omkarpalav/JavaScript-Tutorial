@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div class="table"></div>
+        <input type="number" id="num">
+        <button onsubmit="table()">Submit</button>
+    </center>
+    <script>
+        const target=document.querySelector('.table');
+        const text="";
+        function table(){
+            const num=document.querySelector('#num');
+            for(let i=1;i<=10;i++){
+                let digit=num*i;
+                text=text+`${num} x ${i} = ${digit}<br>`;
+            }
+            target.innerHTML=text;
+
+        }
+    </script>
+</body>
+</html>
