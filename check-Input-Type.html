@@ -1,0 +1,34 @@
+<!-- Question: Write a JavaScript program that checks if a given variable is a string or a number and returns an appropriate message. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center>
+    <input type="text" id="userInput" placeholder="Enter the value"> <br><br>
+    <button id="btn" onclick="checkType()">Check</button><br><br>
+    <div id="result"></div>
+   </center>
+</body>
+<script>
+    function checkType() {
+       const number = document.getElementById('userInput').value;
+        
+       if(number === ""){
+        alert("Input cannot be empty! please enter the value");
+        return;
+       }
+
+       if(isNaN(number)){
+        document.getElementById('result').innerHTML = "The Variable is String"
+       }else{
+        document.getElementById('result').innerHTML = "the Variable is Number"
+       }
+
+    }
+</script>
+</html>
