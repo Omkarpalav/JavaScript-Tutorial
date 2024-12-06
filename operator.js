@@ -9,8 +9,7 @@ function calculateOperation(num1,num2){
     const product = num1 * num2;
     console.log("product", product)
     const quotient = num2 !== 0 ? num1 / num2: "Division by zero is not allowed";
-    console.log("quotient", quotient);
-   
+    console.log("quotient", quotient); 
 }
 calculateOperation(110, 10);
 
