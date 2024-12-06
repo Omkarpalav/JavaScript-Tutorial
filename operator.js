@@ -1,7 +1,6 @@
 
 // Question: Write a function that takes two numbers as input and returns their sum, difference, product, and quotient.
 
-
 function calculateOperation(num1,num2){
     const sum = num1 + num2 ;
     console.log("sum :",sum);
